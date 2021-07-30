@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        box-sizing: border-box;
+      }
+
+      .new-card-design {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg, #ffaf00, #bb02ff);
+      }
+      .new-container {
+        width: 1120px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .new-container .new-card {
+        position: relative;
+        width: 300px;
+        height: 415px;
+        background-color: #fff;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+      }
+      .new-container:hover .new-card {
+        filter: blur(20px);
+        opacity: 0.8;
+        transform: scale(0.9);
+      }
+      .new-container .new-card:hover {
+        filter: blur(0);
+        opacity: 1;
+        transform: scale(1.1);
+      }
+      .new-container .new-card:nth-child(1) .circle,
+      .new-container .new-card:nth-child(1) .new-content a {
+        background-color: #ffaf00;
+      }
+      .new-container .new-card:nth-child(2) .circle,
+      .new-container .new-card:nth-child(2) .new-content a {
+        background-color: #da2268;
+      }
+      .new-container .new-card:nth-child(3) .circle,
+      .new-container .new-card:nth-child(3) .new-content a {
+        background-color: #bb02ff;
+      }
+      .new-container .new-card:nth-child(4) .circle,
+      .new-container .new-card:nth-child(4) .new-content a {
+        background-color: rgb(17, 207, 65);
+      }
+      .new-container .new-card:nth-child(5) .circle,
+      .new-container .new-card:nth-child(5) .new-content a {
+        background-color: rgb(22, 151, 190);
+      }
+      .new-container .new-card:nth-child(6) .circle,
+      .new-container .new-card:nth-child(6) .new-content a {
+        background-color: rgb(216, 24, 200);
+      }
+      .new-container .new-card:nth-child(7) .circle,
+      .new-container .new-card:nth-child(7) .new-content a {
+        background-color: rgb(59, 24, 216);
+      }
+      .new-container .new-card:nth-child(8) .circle,
+      .new-container .new-card:nth-child(8) .new-content a {
+        background-color: rgb(126, 196, 15);
+      }
+      .new-container .new-card:nth-child(8) .circle,
+      .new-container .new-card:nth-child(8) .new-content a {
+        background-color: rgb(208, 228, 30);
+      }
+      .new-container .new-card:nth-child(9) .circle,
+      .new-container .new-card:nth-child(9) .new-content a {
+        background-color: rgb(199, 70, 11);
+      }
+      .new-container .new-card:nth-child(10) .circle,
+      .new-container .new-card:nth-child(10) .new-content a {
+        background-color: rgb(177, 19, 58);
+      }
+      .new-container .new-card h2 {
+        color: #fff;
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 40px;
+      }
+       .new-container .new-card .new-content {
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+      }
+      .new-container .new-card .new-content p {
+        font-size: 1.2rem;
+        color: #666;
+        padding-bottom: 15px;
+      }
+      .new-container .new-card .new-content a {
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        background-color: #000;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        margin: 18px 0 10px;
+        border-radius: 40px;
+        text-decoration: none;
+      }
